@@ -1,0 +1,18 @@
+
+<div>Main Host Application with Angular 16</div>
+<!-- <a routrLink="app2">Remote 2</a> -->
+ <ul>
+    <li><a [routerLink]="['/']" routerLinkActive="active">Home</a></li>
+    <li><a [routerLink]="['/hostlist/5']" routerLinkActive="active">Host List</a></li>
+    <li><a [routerLink]="['/list']" routerLinkActive="active">Remote List</a></li>
+ </ul>
+
+
+ 
+<div>
+   <button (click)="navigateToProductPage()">Product Page</button>
+</div>
+
+
+
+<router-outlet></router-outlet>
